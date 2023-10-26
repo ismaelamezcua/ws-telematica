@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { supabase } from "./supabaseClient";
-import { LoadingIcon } from "./components/Icons";
+import { supabase } from "../libs/supabaseClient";
+import { LoadingIcon } from "./Icons";
 
 export default function Auth() {
   const [loading, setLoading] = useState(false);

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { supabase } from "./supabaseClient";
-import Auth from "./Auth";
+import { supabase } from "./libs/supabaseClient";
+import Auth from "./components/Auth";
 
 function SignOut() {
   return (
