@@ -26,11 +26,7 @@ function App() {
     });
   }, []);
 
-  return (
-    <>
-      {!session ? <Auth /> : <SignOut />}
-    </>
-  );
+  return <>{!session ? <Auth /> : <SignOut />}</>;
 }
 
 export default App;

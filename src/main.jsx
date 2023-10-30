@@ -1,16 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "./index.css";
 
 /*
 
-TODO (Solved): Remove unused files from the project
+TODO (Done): Remove unused files from the project
 
-TODO (Solved): Improve login form design
+TODO (Done): Improve login form design
 https://tailwindui.com/components/application-ui/forms/sign-in-forms
 
-TODO: Create a Loader when the session is getting fetched
+TODO (Done): Create a Loader when the session is getting fetched
 https://tailwindcss.com/docs/animation
 
 TODO: Create a Dashboard
@@ -29,9 +29,9 @@ TODO: Use TensorFlow.js to create a linear regression from measurements
 https://www.tensorflow.org/js?hl=es-419
 
 */
- 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
