@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { supabase } from "./libs/supabaseClient";
 import Auth from "./components/Auth";
+import Dashboard from "./components/Dashboard";
 
 function SignOut() {
   return (
@@ -26,7 +27,17 @@ function App() {
     });
   }, []);
 
-  return <>{!session ? <Auth /> : <SignOut />}</>;
+  return (
+    <>
+      {!session ? (
+        <Auth />
+      ) : (
+        <Dashboard title="Dashboard">
+        Tabl
+        </Dashboard>
+      )}
+    </>
+  );
 }
 
 export default App;
