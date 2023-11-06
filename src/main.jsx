@@ -32,6 +32,6 @@ https://www.tensorflow.org/js?hl=es-419
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+   <App />
+ </React.StrictMode>
 );

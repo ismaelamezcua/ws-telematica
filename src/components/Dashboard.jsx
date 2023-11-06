@@ -1,6 +1,9 @@
 import { supabase } from "../libs/supabaseClient";
+import { useSessionContext } from "../hooks/useSession";
 
-export default function Dashboard({ children, title, session }) {
+export default function Dashboard({ children, title }) {
+  const { session } = useSessionContext();
+  
   return (
     <>
       <div className="bg-slate-900 w-full text-white">
