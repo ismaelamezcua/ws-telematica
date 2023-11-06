@@ -13,10 +13,10 @@ https://tailwindui.com/components/application-ui/forms/sign-in-forms
 TODO (Done): Create a Loader when the session is getting fetched
 https://tailwindcss.com/docs/animation
 
-TODO: Create a Dashboard
+TODO (Done): Create a Dashboard
 https://tailwindui.com/components/application-ui/application-shells/stacked
 
-TODO: Create a Table component to retrieve all entries from the DB
+TODO (WIP): Create a Table component to retrieve all entries from the DB
 https://tailwindui.com/components/application-ui/lists/tables
 
 TODO: Use React Context to share the session between components?

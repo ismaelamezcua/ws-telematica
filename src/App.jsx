@@ -32,7 +32,7 @@ function App() {
       {!session ? (
         <Auth />
       ) : (
-        <Dashboard title="Dashboard">
+        <Dashboard title="Dashboard" session={session}>
         Tabl
         </Dashboard>
       )}

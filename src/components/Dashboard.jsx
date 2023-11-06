@@ -1,4 +1,6 @@
-export default function Dashboard({ children, title }) {
+import { supabase } from "../libs/supabaseClient";
+
+export default function Dashboard({ children, title, session }) {
   return (
     <>
       <div className="bg-slate-900 w-full text-white">
@@ -15,9 +17,13 @@ export default function Dashboard({ children, title }) {
           </div>
 
           {/* Right section */}
-          <div className="py-4">
-            <p className="p-4 rounded-full bg-slate-100 font-bold text-black">
-              U
+          <div className="inline-flex space-x-4 items-center py-4">
+            <p>{session.user.email}</p>
+            <p 
+              className="px-4 py-2 rounded-md bg-slate-100 font-bold text-black cursor-pointer"
+              onClick={() => supabase.auth.signOut()}
+            >
+              Cerrar sesi&oacute;n
             </p>
           </div>
         </div>
