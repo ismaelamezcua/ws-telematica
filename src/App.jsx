@@ -4,17 +4,6 @@ import { SessionContext } from "./hooks/useSession";
 import Auth from "./components/Auth";
 import Dashboard from "./components/Dashboard";
 
-function SignOut() {
-  return (
-    <>
-      <span>Autenticado</span>
-      <button onClick={() => supabase.auth.signOut()}>
-        Cierra sesi&oacute;n
-      </button>
-    </>
-  );
-}
-
 function App() {
   const [session, setSession] = useState(null);
 
@@ -31,14 +20,8 @@ function App() {
   return (
     <>
       <SessionContext.Provider value={{ session, setSession }}>
-      {!session ? (
-        <Auth />
-      ) : (
-        <Dashboard title="Dashboard">
-        Tabl
-        </Dashboard>
-      )}
-    </SessionContext.Provider>
+        {!session ? <Auth /> : <Dashboard title="Dashboard">Tabl</Dashboard>}
+      </SessionContext.Provider>
     </>
   );
 }
